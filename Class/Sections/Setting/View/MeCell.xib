@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeCell" id="KGk-i7-Jjw" customClass="MeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-Lw-unG">
+                        <rect key="frame" x="13" y="8" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="9Ud-nw-AqY"/>
+                            <constraint firstAttribute="width" constant="70" id="OPI-t7-Mqy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-PR-OzE">
+                        <rect key="frame" x="95" y="19" width="40" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WWeChatKit.bundle/Setting/setting_myQR.png" translatesAutoresizingMaskIntoConstraints="NO" id="eGk-Yi-xej">
+                        <rect key="frame" x="294" y="36" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="fJm-3B-b6X"/>
+                            <constraint firstAttribute="width" constant="15" id="moV-UU-atW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etq-nz-WSF">
+                        <rect key="frame" x="95" y="46" width="40" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="eGk-Yi-xej" secondAttribute="trailing" constant="3" id="14t-UN-JXk"/>
+                    <constraint firstItem="yYx-Lw-unG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="2Ly-ev-Adk"/>
+                    <constraint firstItem="yYx-Lw-unG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5YP-dg-jYo"/>
+                    <constraint firstItem="Etq-nz-WSF" firstAttribute="top" secondItem="cl9-PR-OzE" secondAttribute="bottom" constant="7.5" id="JsO-6A-ze9"/>
+                    <constraint firstItem="cl9-PR-OzE" firstAttribute="leading" secondItem="yYx-Lw-unG" secondAttribute="trailing" constant="12" id="eAD-cS-ely"/>
+                    <constraint firstItem="Etq-nz-WSF" firstAttribute="leading" secondItem="yYx-Lw-unG" secondAttribute="trailing" constant="12" id="oD2-6m-spA"/>
+                    <constraint firstItem="cl9-PR-OzE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-14.5" id="sFh-uT-tFx"/>
+                    <constraint firstItem="eGk-Yi-xej" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yXn-A1-7e0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avaterImgView" destination="yYx-Lw-unG" id="cDa-DR-JZ9"/>
+                <outlet property="nameLabel" destination="cl9-PR-OzE" id="6UQ-2x-TCf"/>
+                <outlet property="wechatIDLabel" destination="Etq-nz-WSF" id="Nmn-Nq-ui8"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="199.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WWeChatKit.bundle/Setting/setting_myQR.png" width="18" height="18"/>
+    </resources>
+</document>
